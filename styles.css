@@ -1,62 +1,99 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #d0dcdc;
+    font-family: 'Inter', sans-serif;
+    background-color: #e6eaf0;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .container {
-    background: rgb(168, 197, 203);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fdfdfd;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
 }
 
 h1 {
-    color: black;
+    color: #1e1e1e;
+    margin-bottom: 0.5em;
 }
 
 p {
-    font-size: 14px;
-    color: #110909;
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2em;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    gap: 1.2rem;
     text-align: left;
 }
 
 label {
-    margin-top: 10px;
-    font-weight: bold;
+    font-weight: 600;
+    color: #333;
 }
 
 input, select, textarea {
-    padding: 18px;
-    margin-top: 5px;
+    padding: 14px 16px;
+    font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 95%;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #6c63ff;
+    outline: none;
 }
 
 button {
     margin-top: 15px;
-    padding: 10px;
-    background-color: #494bac;
+    padding: 14px;
+    background-color: #6c63ff;
     color: white;
+    font-weight: bold;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #5548c8;
+}
+
+/* Improve spacing between radio/checkbox and labels */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    margin-left: 0.4rem;
+}
+
+/* Ensure label grouping looks clean */
+form label {
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+form label input[type="radio"],
+form label input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 0.5rem;
 }

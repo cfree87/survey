@@ -34,20 +34,22 @@
                 <option value="other">Other</option>
             </select>
             <br>
-            <!-- Radio Buttons -->
-            <label>How satisfied are you with our service?</label>
-            <label><input type="radio" name="satisfaction" value="very_satisfied" required> Very Satisfied</label>
-            <label><input type="radio" name="satisfaction" value="satisfied"> Satisfied</label>
-            <label><input type="radio" name="satisfaction" value="neutral"> Neutral</label>
-            <label><input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied</label>
+            <!-- Satisfaction Dropdown -->
+            <label for="satisfaction">How satisfied are you with our service?</label>
+            <select id="satisfaction" name="satisfaction" required>
+              <option value="" disabled selected>Select satisfaction level</option>
+              <option value="very_satisfied">Very Satisfied</option>
+              <option value="satisfied">Satisfied</option>
+              <option value="neutral">Neutral</option>
+              <option value="dissatisfied">Dissatisfied</option>
+            </select>
 
-            <br>
-            <!-- Checkboxes -->
+            <!-- Services Checkboxes -->
             <label>Which services have you used? (Select all that apply)</label>
-            <label><input type="checkbox" name="services" value="delivery"> Delivery</label>
-            <label><input type="checkbox" name="services" value="customer_support"> Customer Support</label>
-            <label><input type="checkbox" name="services" value="website"> Website</label>
-            <label><input type="checkbox" name="services" value="other"> Other</label>
+            <div class="input-group"><input type="checkbox" id="services-delivery" name="services" value="delivery"><label for="services-delivery">Delivery</label></div>
+            <div class="input-group"><input type="checkbox" id="services-support" name="services" value="customer_support"><label for="services-support">Customer Support</label></div>
+            <div class="input-group"><input type="checkbox" id="services-website" name="services" value="website"><label for="services-website">Website</label></div>
+            <div class="input-group"><input type="checkbox" id="services-other" name="services" value="other"><label for="services-other">Other</label></div>
 
             <!-- Textarea -->
             <label for="comments">Any additional comments?</label>
