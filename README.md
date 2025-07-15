@@ -8,7 +8,7 @@
 ---
 
 ## 🌐 Live Site  
-[View the Survey Form](https://cfree87.github.io/SurveyForm/)
+[View the Survey Form](https://cfree87.github.io/survey/)
 
 ---
 
@@ -21,7 +21,7 @@
 ---
 
 ## 📸 Screenshots  
-![Survey Form Screenshot](Assets/images/survey-screenshot.png)
+![Survey Form Screenshot](Assets/images/surveyform.png)
 
 ---
 
@@ -42,7 +42,7 @@ This project was created as part of the Responsive Web Design Certification on [
 ## 🚀 How to Use  
 1. Clone this repository:
    ```bash
-   git clone https://github.com/csfree87/SurveyForm.git
+   git clone https://github.com/cfree87/survey.git
    ```
 
 2. Open `index.html` in your browser  
